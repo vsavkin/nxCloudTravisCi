@@ -2,7 +2,13 @@ language: node_js
 sudo: false
 node_js:
   - 12
+
+env:
+  - NX_BRANCH: $TRAVIS_PULL_REQUEST
+
+
 install:
   - yarn
 script:
+  - echo $NX_BRANCH
   - yarn nx affected:test
