@@ -1,4 +1,5 @@
 {
+  "trigger":1,
   "name": "nx-cloud-travis-ci",
   "version": "0.0.0",
   "license": "MIT",
